@@ -1,5 +1,7 @@
 package
 {
+	import be.aboutme.airkinect.fingertracking.examples.basic.BasicFingerTrackingDemo;
+	
 	import com.as3nui.nativeExtensions.air.kinect.examples.DemoBase;
 	import com.as3nui.nativeExtensions.air.kinect.examples.away3D.riggedModel.RiggedModelDemo;
 	import com.as3nui.nativeExtensions.air.kinect.examples.basic.BasicDemo;
@@ -25,6 +27,7 @@ package
 	{
 		
 		public static const DEMO_CLASSES:Vector.<Object> = Vector.<Object>([
+			{label: "Basic Finger Tracking Demo", data: BasicFingerTrackingDemo},
 			{label: "Basic Demo", data: BasicDemo},
 			{label: "RGB Camera Demo", data: RGBCameraDemo},
 			{label: "Depth Camera Demo", data: DepthCameraDemo},
@@ -83,7 +86,7 @@ package
 			}
 			
 			//start default demo
-			currentDemoClass = BasicDemo;
+			currentDemoClass = BasicFingerTrackingDemo;
 
 			stage.addEventListener(Event.RESIZE, resizeHandler, false, 0, true);
 		}
